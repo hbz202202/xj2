@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="favicon.ico"><title>新界链</title><script>// 禁止双指放大
+      document.documentElement.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) {
+          event.preventDefault();
+        }
+      }, false);
+
+      // 禁止双击放大
+      var lastTouchEnd = 0;
+      document.documentElement.addEventListener('touchend', function (event) {
+        var now = Date.now();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false);</script><link href="css/chunk-vendors.ff843ef8.css" rel="stylesheet" integrity="sha384-e8+D5S8nZ8a7OqY98ugLY1twTil9M3emc7tz2/HINYEM6WLC7RSIE3KRyVeWHr8/"><link href="css/app.cf7b7a3c.css" rel="stylesheet" integrity="sha384-RNWlUM4XBDU/Sql0rsiCqkdObrr1Ob4SpZdGS+rVt6iGe5FQbpMu62MxfShyRPf9"></head><body><noscript><strong>We're sorry but burn token doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="js/chunk-vendors.6a48a0c3.js" integrity="sha384-3uBU12GNfod7lsSzcJ6txsMF3q/trIeilDvcnCHUog7KHnoBySfPOR0D97qjMRNq"></script><script src="js/app.ee26ee60.js" integrity="sha384-8GBRqCqkXt5QaMMu0ffX7C0xMXzlFU/9dGr8u0WTWKSxm661etvrK8ryMCREoyJD"></script></body></html>
